@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Kickit - der Fussballmanager nach Felix Vorstellungen</title>
+</head>
+<body>
+    <div>
+        <label>Bitte wähle Dein Team:</label>
+        <select onchange="
+    var flag = confirm('Bist Du sicher, dass Du ' + this.options[this.selectedIndex].text + ' auswählen willst?');
+    if (flag) {
+        document.getElementById('team').innerHTML = this.options[this.selectedIndex].text;
+        var img = document.getElementById('wappen');
+        img.src = 'bilder/' + this.value + '.png';
+        this.parentNode.style.display = 'none';
+    }
+    ">
+            <option value="1">Bayern München</option>
+            <option value="2">Borussia Dortmund</option>
+            <option value="3">Schalke 04</option>
+            <option value="4">Bayer 04 Leverkusen</option>
+            <option value="5">VFL Wolfsburg</option>
+            <option value="6">Borussia Mönchengladbach</option>
+            <option value="7">FSV Mainz 05</option>
+            <option value="8">FC Augsburg</option>
+            <option value="9">1899 Hoffenheim</option>
+            <option value="10">Hannover 96</option>
+            <option value="11">Hertha BSC</option>
+            <option value="12">Werder Bremen</option>
+            <option value="13">Eintracht Frankfurt</option>
+            <option value="14">SC Freiburg</option>
+            <option value="15">VFB Stuttgart</option>
+            <option value="16">Hamburger SV</option>
+            <option value="17">1. FC Köln</option>
+            <option value="18">SC Paderborn 07</option>
+            <option value="19">FC Ingolstadt 04</option>
+            <option value="20">SV Darmstadt 98</option>
+            <option value="21">1.FC Nürnberg</option>
+            <option value="22">FC Bayern Kickers</option>
+            <option value="23">SV Laufamholz</option>
+        </select>
+    </div>
+
+
+    <br />
+
+    Dein Team heißt: <span id="team"></span>
+    <img src="" alt="" id="wappen" width="50" height="50" />
+    <br />
+    <br />
+    <br />
+    Transfermarkt
+    <br />
+    <br />
+    <br />
+   
+    <table border="1">
+        <tr>
+            <td>
+                <b>Preis:</b>
+            </td>
+            <td>
+                1000€
+            </td>
+            <td>
+                2000€
+            </td>
+
+            <td>
+                3000€
+            </td>
+            <td>
+                4000€
+            </td>
+            <td>
+                5000€
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <b>Note:</b>
+            </td>
+            <td>
+                10
+            </td>
+            <td>
+                9
+            </td>
+            <td>
+                8
+            </td>
+            <td>
+                7
+            </td>
+          <td>
+              6
+          </td>
+
+
+        </tr>
+
+
+    </table>
+
+    <br />
+
+    <!--<table border="1">
+        <tr>
+            <td>Platz</td>
+            <td>Verein</td>
+            <td>Punkte</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bayern München</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Borussia Dortmund</td>
+            <td>0</td>
+        </tr>
+    </table>-->
+
+</body>
+</html>
