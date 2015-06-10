@@ -1,10 +1,15 @@
 <html>
 <head>
     <title>Kickit - der Fussballmanager nach Felix Vorstellungen</title>
+    <script src="react-0.13.3/build/react.js"></script>
+    <script src="react-0.13.3/build/JSXTransformer.js"></script>
+    <script type="text/jsx" src="app.jsx"></script>
 </head>
 <body>
-    <div>
-        <label>Bitte w‰hle Dein Team:</label>
+    <div id="app"></div>
+    <div id="app2"></div>
+    <label>
+        Bitte w‰hle Dein Team:
         <select onchange="
     var flag = confirm('Bist Du sicher, dass Du ' + this.options[this.selectedIndex].text + ' ausw‰hlen willst?');
     if (flag) {
@@ -38,7 +43,7 @@
             <option value="22">FC Bayern Kickers</option>
             <option value="23">SV Laufamholz</option>
         </select>
-    </div>
+    </label>
 
 
     <br />
@@ -46,64 +51,278 @@
     Dein Team heiﬂt: <span id="team"></span>
     <img src="" alt="" id="wappen" width="50" height="50" />
     <br />
-    <br />
-    <br />
-    Transfermarkt
-    <br />
-    <br />
-    <br />
-   
+
+
+
+
+
+
     <table border="1">
         <tr>
+
+
             <td>
-                <b>Preis:</b>
+                <b>Nummer</b>
             </td>
+            <tr>
             <td>
-                1000Ä
+                1
             </td>
+   </tr>
             <td>
-                2000Ä
+                2
             </td>
 
             <td>
-                3000Ä
-            </td>
-            <td>
-                4000Ä
-            </td>
-            <td>
-                5000Ä
+                3
             </td>
 
+            <td>
+                4
+            </td>
 
-        </tr>
-        <tr>
             <td>
-                <b>Note:</b>
+                5
             </td>
+
             <td>
-                10
+                6
             </td>
-            <td>
-                9
-            </td>
-            <td>
-                8
-            </td>
+
             <td>
                 7
             </td>
-          <td>
-              6
-          </td>
+
+            <td>
+                8
+            </td>
+
+            <td>
+                9
+            </td>
+
+            <td>
+                10
+            </td>
+
+            <td>
+                11
+            </td>
+
+
+
+
+
+
+
 
 
         </tr>
+
+
+
+
+
+
+
+
 
 
     </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
     <br />
+    <br />
+    <div style="display:none">
+        <b>Transfermarkt</b>
+        <br />
+        <br />
+        <br />
+
+        <table border="1">
+
+            <tr>
+                <td>
+                    <b>Name:</b>
+                </td>
+
+                <td>
+                    Uli
+                </td>
+                <td>
+                    Tim
+                </td>
+                <td>
+                    Tobi
+                </td>
+                <td>
+                    Max
+                </td>
+                <td>
+                    Jan
+                </td>
+                <td>
+                    Lucas
+                </td>
+                <td>
+                    Franz
+                </td>
+                <td>
+                    Tom
+                </td>
+                <td>
+                    Lena
+                </td>
+                <td>
+                    Felix
+                </td>
+
+
+
+
+            <tr>
+                <td>
+                    <b>Preis:</b>
+                </td>
+                <td>
+                    1000Ä
+                </td>
+                <td>
+                    2000Ä
+                </td>
+
+                <td>
+                    3000Ä
+                </td>
+                <td>
+                    4000Ä
+                </td>
+                <td>
+                    5000Ä
+                </td>
+                <td>
+                    6000Ä
+                </td>
+                <td>
+                    7000Ä
+                </td>
+                <td>
+                    8000Ä
+                </td>
+                <td>
+                    9000Ä
+                </td>
+                <td>
+                    10000Ä
+                <td />
+
+
+
+
+
+
+
+
+            <tr />
+            <tr>
+                <td>
+                    <b>Speed:</b>
+                </td>
+
+                <td>
+                    5 Km/h
+                </td>
+                <td>
+                    5,8 Km/h
+                </td>
+                <td>
+                    6,6  Km/h
+                </td>
+                <td>
+                    7,4 Km/h
+                </td>
+                <td>
+                    8,2 Km/h
+                </td>
+                <td>
+                    9 Km/h
+                </td>
+                <td>
+                    9,8 Km/H
+                </td>
+                <td>
+                    10,6 Km/h
+                </td>
+                <td>
+                    11,4 Km/h
+                </td>
+                <td>
+                    13 Km/h
+                </td>
+
+
+
+
+
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>                                 
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+                <td>
+                    <a href="javascript:alert('Funkioniert leider nocht nicht!')">Kaufen</a>
+                </td>
+
+
+
+
+
+
+
+
+
+            </tr>
+        </table>
+    </div>
+    <br />
+
+    Kontostand:2000Ä
 
     <!--<table border="1">
         <tr>
