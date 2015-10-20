@@ -127,8 +127,7 @@ var SelectedTeam = React.createClass({
 
 var Transfermarkt = React.createClass({
 	render: function() {
-		return
-		(
+		return (
 			<div>
 	            <b>Transfermarkt</b>
 	            <table>
@@ -144,7 +143,7 @@ var Transfermarkt = React.createClass({
 	                <td>Lucas</td>
 	                <td>Franz</td>
 	                <td>Tom</td>
-	                <td>Lena</td>
+	                <td>Sam</td>
 	                <td>Felix</td>
 	            </tr>
 	            <tr>
@@ -223,16 +222,16 @@ var App = React.createClass({
 			team: null,
 		    players: [
 				{number: 1, name: "Uli", speed: 5},
-				{number: 2, name: "Uli", speed: 5},
-				{number: 3, name: "Uli", speed: 5},
-				{number: 4, name: "Uli", speed: 5},
-				{number: 5, name: "Uli", speed: 5},
-				{number: 6, name: "Uli", speed: 5},
-				{number: 7, name: "Uli", speed: 5},
-				{number: 8, name: "Uli", speed: 5},
-				{number: 9, name: "Uli", speed: 5},
-				{number: 10, name: "Uli", speed: 5},
-				{number: 11, name: "Uli", speed: 5}
+				{number: 2, name: "Tim", speed: 5.8},
+				{number: 3, name: "Tobi", speed: 6.6},
+				{number: 4, name: "Max", speed: 7.4},
+				{number: 5, name: "Jan", speed: 8.2},
+				{number: 6, name: "Lucas", speed: 9},
+				{number: 7, name: "Franz", speed: 9.8},
+				{number: 8, name: "Tom", speed: 10.6},
+				{number: 9, name: "Sam", speed: 11.4},
+				{number: 10, name: "Felix", speed: 12.2},
+				
 				]
 			};
 	},
@@ -258,5 +257,5 @@ var App = React.createClass({
 	}
 });
 
-React.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
 
