@@ -1,24 +1,24 @@
 <html>
-    
-    <head>
-        <title>Kickit - der Fussballmanager nach Felix Vorstellungen</title>
-        <script src="react-0.14.0/build/react.js"></script>
-        <script src="react-0.14.0/build/react-dom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-        
-        <script type="text/babel" src="app.jsx"></script>
-    </head>
-    
-    <body>
-        <div id="app"></div>
-        <br />
-        <br />
-        <br />Kontostand:2000&euro;
-        
-        
-        
-        
-        
-    </body>
+
+<head>
+    <title>Kickit - der Fussballmanager nach Felix Vorstellungen</title>
+
+</head>
+
+<body>
+    <div id="app"></div>
+    <br />
+    <br />
+    <br />Kontostand:2000&euro;
+
+
+
+    <!-- note that this has to be on the end -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import('src/index');
+    </script>
+</body>
 
 </html>

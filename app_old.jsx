@@ -1,4 +1,7 @@
-﻿var teams = [ 
+﻿var React = require('react');
+var ReactDOM = require('react-dom');
+
+var teams = [ 
 	{key:1, value:"FC Bayern München"},
 	{key:2, value:"Borussia Dortmund"},
 	{key:3, value:"Schalke 04"},

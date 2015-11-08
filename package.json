@@ -1,0 +1,34 @@
+{
+  "name": "kickit",
+  "version": "1.0.0",
+  "description": "Ein Fussballmanager nach Felix Vorstellungen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schwolf/KickIt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schwolf/KickIt/issues"
+  },
+  "homepage": "https://github.com/schwolf/KickIt#readme",
+  "devDependencies": {
+    "jspm": "^0.16.14"
+  },
+  "jspm": {
+    "dependencies": {
+      "jsx": "github:floatdrop/plugin-jsx@^1.1.0",
+      "react": "npm:react@^0.14.2",
+      "react-dom": "npm:react-dom@^0.14.2"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
