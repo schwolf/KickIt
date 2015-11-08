@@ -1,5 +1,6 @@
 import React from 'react';
 import DropDown from './DropDown.jsx!'
+import Container from './Container.jsx!'
 
 export default class KickIt extends React.Component {
 	constructor(props) {
@@ -27,8 +28,11 @@ export default class KickIt extends React.Component {
 		return (
 			<div>
 			<DropDown options={ this.props.teams }
-			onChange = { this.onTeamSelected }
-			selectedTeam = { this.state.team } > </DropDown>
+				onChange = { this.onTeamSelected }
+				selectedTeam = { this.state.team } ></DropDown>
+				
+			<Container team={this.state.team} 
+					players={this.state.players} />
 		< /div>
 		);
 	}
