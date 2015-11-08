@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Import non-js files like this, with the extension and an exclamation point:
-import KickIt from 'src/KickIt.jsx!'
+import KickIt from './components/KickIt.jsx!'
 
 (() => {
   ReactDOM.render(

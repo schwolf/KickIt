@@ -1,5 +1,5 @@
 import React from 'react';
-import DropDown from 'src/DropDown.jsx!'
+import DropDown from './DropDown.jsx!'
 
 export default class KickIt extends React.Component {
 	constructor(props) {
