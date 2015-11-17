@@ -20,7 +20,7 @@ export default class KickIt extends React.Component {
 				{ number: 10, name: "Felix", speed: 12.2 }]
 		}
 		
-		// event handlers have to be bound to the object
+		// event handlers have to be bound to the object, see http://reactkungfu.com/2015/07/why-and-how-to-bind-methods-in-your-react-component-classes/
 		this.onTeamSelected = this.onTeamSelected.bind(this);
 	}
 

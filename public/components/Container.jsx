@@ -1,5 +1,7 @@
 import React from 'react';
 import SelectedTeam from './SelectedTeam.jsx!'
+import Players from './Players.jsx!'
+import Transfermarkt from './Transfermarkt.jsx!'
 
 export default class Container extends React.Component {
     render() {
@@ -16,9 +18,11 @@ export default class Container extends React.Component {
 				
 				<br /><br />
 				
-				{/*<Players players={this.props.players} />*/}
+				<Players players={this.props.players} />
 				
-				{/*<Transfermarkt />*/}
+				<br /><br />
+				
+				<Transfermarkt />
 			</div>
 		);
 	}
