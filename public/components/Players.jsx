@@ -12,25 +12,29 @@ export default class Players extends React.Component {
 		// note that border does not work here because jsx table does not know it
 		return (
 			  <table border="1">
-				<tr>
-					<td>Nummer</td>
-					<td>Name</td>
-					<td>Speed</td>
-					<td></td>
-				</tr>
-				{
-					// arrow functions preserve the this context, so arrows are the most convenient here. See http://stackoverflow.com/questions/30148827/this-is-undefined-inside-map-function-reactjs
-					this.props.players.map(player => {
-						// do not omit the braces, otherwise the new line for the tr will cause trouble (element is then not being rendered). alternatively, start in the same line
-						return (
-						<tr key={player.number}>
-							<td>{ player.number }</td>
-							<td>{ player.name }</td>
-							<td>{ player.speed } km/h</td>
-							<td><button onClick={this.optimize}>verbessern</button></td> 
-						</tr>
-					)})
-				}
+				<thead>
+					<tr>
+						<td>Nummer</td>
+						<td>Name</td>
+						<td>Speed</td>
+						<td></td>
+					</tr>
+					</thead>
+					<tbody>
+					{
+						// arrow functions preserve the this context, so arrows are the most convenient here. See http://stackoverflow.com/questions/30148827/this-is-undefined-inside-map-function-reactjs
+						this.props.players.map(player => {
+							// do not omit the braces, otherwise the new line for the tr will cause trouble (element is then not being rendered). alternatively, start in the same line
+							return (
+							<tr key={player.number}>
+								<td>{ player.number }</td>
+								<td>{ player.name }</td>
+								<td>{ player.speed } km/h</td>
+								<td><button onClick={this.optimize}>verbessern</button></td> 
+							</tr>
+						)})
+					}
+				</tbody>
 			  </table>
       );
 	}
